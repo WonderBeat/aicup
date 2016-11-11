@@ -40,7 +40,7 @@ class Runner(args: Array<String>) {
                     val move = Move()
                     moves[wizardIndex] = move
                     strategies[wizardIndex /*playerWizard.getTeammateIndex()*/].move(
-                            playerWizard, playerContext.getWorld(), game, move
+                            GameTick(playerWizard, playerContext.getWorld(), game, move)
                     )
                 }
 
